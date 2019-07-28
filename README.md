@@ -1,6 +1,6 @@
 # Collaborating with git: branches, merging, and pull requests
 
-### Objectives
+## Objectives
 *After this lesson, students will be able to:*
 
 - Create different branches in a git repo
@@ -10,12 +10,15 @@
 - Share code between people using Github
 - Describe and utilize good git code isolation practices
 
+<br>
 
-# Intro
+## Intro
 
 Using git as we have in the past few months is perfectly fine when working alone, though I imagine many of you will use and benefit from the processes and patterns we're learning today even when you work alone.
 
 *Exercise:* What problem does Git solve?
+
+<br>
 
 ## The problem
 
@@ -40,7 +43,7 @@ Make sure you're *not* in your student repo in the terminal.
 
 <br>
 
-# Processes and Branching
+## Processes and Branching
 
 From now on you will have at least two branches if not more in your projects.
 

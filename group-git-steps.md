@@ -21,4 +21,6 @@
 4. Run `git push origin yourname-dev`
 5. Send a pull request to team leader
 6. The team leader merges the code to master.
-7. Run `git pull upstream master` to get current version from team leader.
+7. Run `git pull upstream master` to get current version from team leader locally. Your local master branch should now be up to date with the upstream master.
+8. `git checkout yourname-dev`
+9. `git merge master` will merge the latest version of the code to your dev branch.
