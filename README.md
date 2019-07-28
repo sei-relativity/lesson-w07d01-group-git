@@ -1,12 +1,3 @@
----
-title: Collaborating with git: branches, merging, and pull requests
-type: lesson
-duration: "2:00"
-creator:
-    name: Colin Hart
-competencies: Deployment
----
-
 # Collaborating with git: branches, merging, and pull requests
 
 ### Objectives
@@ -37,8 +28,9 @@ Up till now, git has only solved two big problems, how do we as teachers get the
 
 But git does _so_ much more.
 
+<br>
 
-## setup
+## Setup
 
 Make sure you're *not* in your student repo in the terminal.
 
@@ -46,7 +38,9 @@ Make sure you're *not* in your student repo in the terminal.
 2. `clone` that repo down locally, again making sure you're **NOT** in the student repo.
 3. `cd` into that new repo.
 
-# processes and branching
+<br>
+
+# Processes and Branching
 
 From now on you will have at least two branches if not more in your projects.
 
@@ -61,7 +55,9 @@ From now on you will have at least two branches if not more in your projects.
      git     | pull/push |  origin  |    master
   ```
 
-## master branch
+<br>
+
+## `master` branch
 
 It holds _working_ code
 
@@ -73,7 +69,9 @@ This is the code that users see and use. Not code that should be developing in o
 
 It is a source of truth. This is the most final version of your application. If anything ever happens to your code, you know you can always just return to this version.
 
-## dev branch
+<br>
+
+## `dev` branch
 
 Create a new branch; there are two commands you can use
 
@@ -92,7 +90,11 @@ The dev branch is where you write code, test things, experiment on things, break
 
 You only ever move code from dev to master when dev is in a working state.
 
-## The process for pushing working code.
+**NOTE- for your group projects, it may be easiest to create a branch called `your-name-dev` instead of seperate feature branches. For example, `marc-dev`**
+
+<br>
+
+## The process for pushing working code
 
 One person on your team will create the repo for your project; you should all fork the main repo and then clone your fork.
 
@@ -106,13 +108,28 @@ That person will then merge the code from dev to master and push it `git push or
 
 Finally, all the other team members will be able to change to the master branch, and run `git pull upstream master` to get the most up to date working changes.
 
-** You can always check that your branches are connected to the correct github repos by running `git remote -v`.
+**You can always check that your branches are connected to the correct github repos by running `git remote -v`.**
+
+<br>
+
+## `git remote upstream`
+
+When you run `git remote -v` you should have an origin and upstream URLs
+
+- `origin`: This is the URL to **your** fork.
+- `upstream`: You'll need to add this manually. This is the URL for the master project repo. Once your project leader merges new code to the master, you'll need to run `git pull upstream master`.
+
+To add upstream: `git remote add upstream <URL-TO-THE-ORIGINAL-PROJECT-REPO-YOU-FORKED>` 
+
+<br>
 
 ## The process for sharing code that's not finished.
 
 Say that you have a feature you're just stuck on, and someone else is going to take it over. How do you get your unfinished code from your machine to the other?
 
 Same process as above, and just making sure that you're not merging it to master, **ever**.  
+
+<br>
 
 ## feature branches
 
@@ -165,6 +182,8 @@ master
 m d A T
 ```
 
+<br>
+
 # We Do Lab
 
 1. touch a file called `weird1` in dev
@@ -180,6 +199,8 @@ m d A T
   If you run `git status` and `ls`
 
   You'll notice how `weird1` isn't in our directory this time. It's currently saved and only accessible in the `dev` branch
+
+<br>
 
 ## Merging
 
