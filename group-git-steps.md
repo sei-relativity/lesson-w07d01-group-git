@@ -15,8 +15,8 @@
 
 ### Teammates
 1. Fork and clone team leader's repo i.e. `git clone <your forked git repo url>`. This will be your `origin`
-2. run `git checkout -b yourname-dev` to create a dev branch
 3. run `git remote add upstream <team leader git url>`
+2. run `git checkout -b yourname-dev` to create a dev branch
 4. Create a new file (e.g.- `marc.html`) and `git add -A` then `git commit -m '<relevant message>'` 
 4. Run `git push origin yourname-dev`
 5. Send a pull request to team leader
