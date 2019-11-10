@@ -93,7 +93,7 @@ The dev branch is where you write code, test things, experiment on things, break
 
 You only ever move code from dev to master when dev is in a working state.
 
-**NOTE- for your group projects, it may be easiest to create a branch called `your-name-dev` instead of seperate feature branches. For example, `marc-dev`**
+**NOTE- for your group projects, it may be easiest to create a branch called `your-name-dev` instead of seperate feature branches. For example, `hazim-dev`**
 
 <br>
 
